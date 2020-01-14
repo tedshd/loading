@@ -1,5 +1,6 @@
 .loading_no_scroll {
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 .loading_run {
   display: inline-block;
