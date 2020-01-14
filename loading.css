@@ -1,0 +1,51 @@
+.loading_no_scroll {
+  overflow: hidden;
+}
+.loading_run {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  position: relative;
+  animation-name: loading_run;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.loading_run:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  animation-name: loading_run;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: .3s;
+}
+.loading_run:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #ddd;
+  position: absolute;
+  left: 60px;
+  top: 0;
+  animation-name: loading_run;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-delay: .6s;
+}
+@keyframes loading_run {
+  0% {
+    background: #777;
+  }
+  90% {
+    background: #ddd;
+  }
+  100% {
+    background: #777;
+  }
+}
+
